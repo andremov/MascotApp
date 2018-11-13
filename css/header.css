@@ -1,0 +1,25 @@
+
+
+/* [ HEADER ] */
+.am_header {
+  height: 125px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.am_header * {
+	display: inline-block;
+}
+
+
+/* [ LOGO ] */
+
+.logo {
+  left: 52px;
+}
+
+.logo img {
+	width: 200px;
+}

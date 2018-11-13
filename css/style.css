@@ -1,0 +1,14 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	background-color: #cccccc;
+	background-image: url("//assets/bkg.png");
+}
+
+body, html {
+	height: 100%;
+	font-family: Montserrat-Regular, sans-serif;
+  font-weight: 400;
+}
