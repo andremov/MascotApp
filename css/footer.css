@@ -1,0 +1,67 @@
+
+
+/* [ FOOTER ] */
+.am_footer {
+	background-color: white;
+	height: 50%;
+	width: 100%;
+
+	z-index: 1100;
+
+	box-shadow: 0 1px 8px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0 1px 8px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0 1px 8px 0px rgba(0,0,0,0.75);
+	-o-box-shadow: 0 1px 8px 0px rgba(0,0,0,0.75);
+	-ms-box-shadow: 0 1px 8px 0px rgba(0,0,0,0.75);
+
+	padding: 10px;
+}
+
+.am_footer .block {
+	vertical-align: top;
+	display: inline-block;
+	width: 19%;
+	height: 300px;
+	padding: 10px;
+}
+
+.am_footer .bottom_block {
+	width: 30%;
+	height: 25%;
+	display: block;
+	margin:auto;
+	text-align: center;
+}
+
+
+.am_footer .icon_small {
+	display:inline-block;
+	width: 35px;
+}
+
+
+.am_footer button {
+	vertical-align: bottom;
+	display: block;
+	background-color: #ff7b00;
+	padding: 10px 20px 10px 20px;
+
+	margin: auto;
+	margin-top: 10px;
+	border-radius: 10px;
+	border-bottom: 4px solid #d0671c;
+}
+
+.am_footer button:hover {
+	background-color: #ff8f26;
+	border-bottom: 6px solid #ff7b00;
+	transform: translate(0px, -2px);
+	-webkit-transform: translate(0px, -2px);
+}
+
+.am_footer button:active {
+	transform: translate(0px, 4px);
+	-webkit-transform: translate(0px, 4px);
+	background-color: #ffa34d;
+	border-bottom: 0px;
+}
