@@ -41,7 +41,6 @@
 
 
 .am_footer button {
-	vertical-align: bottom;
 	display: block;
 	background-color: #ff7b00;
 	padding: 10px 20px 10px 20px;
@@ -64,4 +63,18 @@
 	-webkit-transform: translate(0px, 4px);
 	background-color: #ffa34d;
 	border-bottom: 0px;
+}
+
+.am_footer input[type=text] {
+	display: block;
+	background-color: #eee;
+
+	padding: 5px;
+	width: 95%;
+	margin: auto;
+	border-radius: 8px;
+}
+
+.am_footer input[type=text]:active {
+	border-bottom: 10px solid #fff;
 }
