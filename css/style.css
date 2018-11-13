@@ -3,11 +3,12 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	background-color: #cccccc;
-	background-image: url("//assets/bkg.png");
+	/*background-color: #cccccc;*/
 }
 
-body, html {
+body {
+	background-image: url("../assets/bkg.png");
+	background-size: 80px 80px;
 	height: 100%;
 	font-family: Montserrat-Regular, sans-serif;
   font-weight: 400;

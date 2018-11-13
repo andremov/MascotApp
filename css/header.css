@@ -2,24 +2,50 @@
 
 /* [ HEADER ] */
 .am_header {
-  height: 125px;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
+	background-color: white;
+	height: 10%;
+	width: 100%;
+
+	position: fixed;
+	z-index: 1100;
+
+	box-shadow: 0 1px 8px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0 1px 8px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0 1px 8px 0px rgba(0,0,0,0.75);
+	-o-box-shadow: 0 1px 8px 0px rgba(0,0,0,0.75);
+	-ms-box-shadow: 0 1px 8px 0px rgba(0,0,0,0.75);
+
+	padding: 10px;
+	padding-left:50px;
 }
 
 .am_header * {
 	display: inline-block;
+	margin-right: 10px;
 }
 
-
-/* [ LOGO ] */
-
-.logo {
-  left: 52px;
+.am_header .icon_block {
+	float: right;
 }
 
-.logo img {
+.am_header .vertical_line {
+	display: inline-block;
+	height: 20px;
+	width: 1px;
+	background-color: #aaa;
+	margin-top: 8px;
+}
+
+.am_header .menu {
+
+}
+
+.am_header .icon {
+	width:50px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.am_header .logo {
 	width: 200px;
 }
