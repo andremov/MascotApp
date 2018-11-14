@@ -69,18 +69,6 @@ a:hover {
 	background-color: white;
 }
 
-.section .h150 {
-	height: 150px;
-}
-
-.section .h100 {
-	height: 100px;
-}
-
-.section .h200 {
-	height: 200px;
-}
-
 .section .vertical_line {
 	display: inline-block;
 	height: 50%;
@@ -89,14 +77,22 @@ a:hover {
 	margin:auto;
 }
 
-.section .third {
+.section .third, .section .fourth {
 	margin: 10px;
 	display: inline-block;
-	width: 31%;
 	vertical-align: top;
 	text-align: center;
+
 }
 
-.section .third * {
+.section .third {
+	width: 31%;
+}
+
+.section .fourth {
+	width: 23%;
+}
+
+.section .third *, .section .fourth * {
 	width: 100%;
 }
