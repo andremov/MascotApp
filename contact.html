@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<link rel="icon" type="image/png" href="assets/ma_icon.png"/>
-	<title>Contact - MascotApp</title>
+	<title>Home - MascotApp</title>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/loader.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/loadproducts.js"></script>
 
 </head>
+
 <body>
+	<div class="loader">
+		<div class="load_icon">
+		  <hr/><hr/><hr/><hr/>
+		</div>
+	  </div>
 
 	<!-- Header -->
 	<div class="am_header">
@@ -57,218 +71,204 @@
 		</div>
 	</div>
 
+	<br><br><br><br><br><br>
+
 	<!-- Title Page -->
-	<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(images/heading-pages-06.jpg);">
-		<h2 class="l-text2 t-center">
+	<div class="title">
+		<h2>
 			Contact
 		</h2>
-	</section>
+	</div>
 
 	<!-- content page -->
-	<section class="bgwhite p-t-66 p-b-60">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 p-b-30">
-					<div class="p-r-20 p-r-0-lg">
-						<div class="contact-map size21" id="google_map" data-map-x="40.614439" data-map-y="-73.926781" data-pin="images/icons/icon-position-map.png" data-scrollwhell="0" data-draggable="1"></div>
-					</div>
-				</div>
+	<div class="section">
+		<div class="white_bg form" >
 
-				<div class="col-md-6 p-b-30">
-					<form class="leave-comment">
-						<h4 class="m-text26 p-b-36 p-t-15">
-							Send us your message
-						</h4>
+			<h4 class="">
+				Send us your message
+			</h4>
 
-						<div class="bo4 of-hidden size15 m-b-20">
-							<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="name" placeholder="Full Name">
-						</div>
+			<div class="">
+				<input style="width: 50%"class="" type="text" name="name" placeholder="Full Name">
+			</div>
 
-						<div class="bo4 of-hidden size15 m-b-20">
-							<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="phone-number" placeholder="Phone Number">
-						</div>
+			<div class="">
+				<input style="width: 50%"class="" type="text" name="phone-number" placeholder="Phone Number">
+			</div>
 
-						<div class="bo4 of-hidden size15 m-b-20">
-							<input class="sizefull s-text7 p-l-22 p-r-22" type="text" name="email" placeholder="Email Address">
-						</div>
+			<div class="">
+				<input style="width: 50%"class="" type="text" name="email" placeholder="Email Address">
+			</div>
 
-						<textarea class="dis-block s-text7 size20 bo4 p-l-22 p-r-22 p-t-13 m-b-20" name="message" placeholder="Message"></textarea>
+			<textarea class="" name="message" placeholder="Message"></textarea>
 
-						<div class="w-size25">
-							<!-- Button -->
-							<button class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4">
-								Send
-							</button>
-						</div>
-					</form>
-				</div>
+			<div class="btn flat" style="width: 50%">
+				Send
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<div class="am_footer">
+
+		<div class="block">
+			<h5 class="allcaps">
+				Get In Touch
+			</h5>
+			<br>
+			<div>
+				<p>
+					Any questions? Let us know in store at
+					5505 Boul St-Laurent #2000, Montréal, QC H2T 1S6, Canada or call us on (+1) 808 804 8120
+				</p>
+				<br>
+
+				<a href="#"><img class="icon_small" src="assets/icons/twitter.png"></a>
+				<a href="#"><img class="icon_small" src="assets/icons/youtube.png"></a>
+				<a href="#"><img class="icon_small" src="assets/icons/instagram.png"></a>
+				<a href="#"><img class="icon_small" src="assets/icons/snapchat.png"></a>
+				<a href="#"><img class="icon_small" src="assets/icons/email.png"></a>
 			</div>
 		</div>
-	</section>
 
+		<div class="block">
+			<h5 class="allcaps">
+				Categories
+			</h5>
 
-		<!-- Footer -->
-		<div class="am_footer">
+			<br>
 
-			<div class="block">
-				<h5 class="allcaps">
-					Get In Touch
-				</h5>
-				<br>
+			<ul>
+				<li>
+					<a href="#">
+						Men
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						Women
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						Dresses
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						Sunglasses
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="block">
+			<h5 class="allcaps">
+				Links
+			</h5>
+
+			<br>
+
+			<ul>
+				<li>
+					<a href="#">
+						Search
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						About Us
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						Contact Us
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						Returns
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="block">
+			<h5 class="allcaps">
+				Help
+			</h5>
+
+			<br>
+
+			<ul>
+				<li>
+					<a href="#">
+						Track Order
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						Returns
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						Shipping
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						FAQs
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="block">
+			<h5 class="allcaps">
+				Newsletter
+			</h5>
+
+			<br>
+
 				<div>
-					<p>
-						Any questions? Let us know in store at
-						5505 Boul St-Laurent #2000, Montréal, QC H2T 1S6, Canada or call us on (+1) 808 804 8120
-					</p>
-					<br>
-
-					<a href="#"><img class="icon_small" src="assets/icons/twitter.png"></a>
-					<a href="#"><img class="icon_small" src="assets/icons/youtube.png"></a>
-					<a href="#"><img class="icon_small" src="assets/icons/instagram.png"></a>
-					<a href="#"><img class="icon_small" src="assets/icons/snapchat.png"></a>
-					<a href="#"><img class="icon_small" src="assets/icons/email.png"></a>
+					<input type="text" name="email" placeholder="email@example.com">
+					<span></span>
 				</div>
-			</div>
 
-			<div class="block">
-				<h5 class="allcaps">
-					Categories
-				</h5>
-
-				<br>
-
-				<ul>
-					<li>
-						<a href="#">
-							Men
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							Women
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							Dresses
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							Sunglasses
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="block">
-				<h5 class="allcaps">
-					Links
-				</h5>
-
-				<br>
-
-				<ul>
-					<li>
-						<a href="#">
-							Search
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							About Us
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							Contact Us
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							Returns
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="block">
-				<h5 class="allcaps">
-					Help
-				</h5>
-
-				<br>
-
-				<ul>
-					<li>
-						<a href="#">
-							Track Order
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							Returns
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							Shipping
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							FAQs
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="block">
-				<h5 class="allcaps">
-					Newsletter
-				</h5>
-
-				<br>
-
-				<form>
-					<div>
-						<input type="text" name="email" placeholder="email@example.com">
-						<span></span>
+				<div>
+					<div class="btn pressable">
+						Subscribe
 					</div>
-
-					<div>
-						<!-- Button -->
-						<button>
-							Subscribe
-						</button>
-					</div>
-
-				</form>
-			</div>
-
-			<div class="bottom_block">
-
-				<img class="icon_small" src="assets/icons/paypal.png">
-				<img class="icon_small" src="assets/icons/visa.png">
-				<img class="icon_small" src="assets/icons/mastercard.png">
-				<img class="icon_small" src="assets/icons/express.png">
-				<img class="icon_small" src="assets/icons/discover.png">
-
-				<br>
-
-				Copyright 'MascotApp' © 2018 All rights reserved.
-			</div>
+				</div>
 
 		</div>
 
-	</body>
-	</html>
+		<div class="bottom_block">
+
+			<img class="icon_small" src="assets/icons/paypal.png">
+			<img class="icon_small" src="assets/icons/visa.png">
+			<img class="icon_small" src="assets/icons/mastercard.png">
+			<img class="icon_small" src="assets/icons/express.png">
+			<img class="icon_small" src="assets/icons/discover.png">
+
+			<br>
+
+			Copyright 'MascotApp' © 2018 All rights reserved.
+		</div>
+
+	</div>
+
+</body>
+</html>
