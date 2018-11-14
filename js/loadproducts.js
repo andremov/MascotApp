@@ -28,6 +28,15 @@
 		$( "[name='p6img']" ).attr("src", "products/p6.jpg");
 
 
+		$( "[name='p0name']" ).html(names[0]);
+    	$( "[name='p1name']" ).html(names[1]);
+		$( "[name='p2name']" ).html(names[2]);
+		$( "[name='p3name']" ).html(names[3]);
+		$( "[name='p4name']" ).html(names[4]);
+		$( "[name='p5name']" ).html(names[5]);
+		$( "[name='p6name']" ).html(names[6]);
+		$( "[name='p7name']" ).html(names[7]);
+
 		$( "[name='cat0name']" ).html(categories[0]);
 		$( "[name='cat1name']" ).html(categories[1]);
 		$( "[name='cat2name']" ).html(categories[2]);

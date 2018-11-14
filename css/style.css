@@ -30,6 +30,37 @@ ul, li {
 	text-transform: uppercase;
 }
 
+.crop.soft {
+	border-radius: 20px;
+}
+
+.crop {
+	overflow: hidden;
+}
+
+hr.bottom {
+	height: 60px;
+	background-image: url("../assets/hr.png") ;
+    background-position: 50% -50%;
+	background-repeat: no-repeat;
+	background-size: 30px;
+	border:none;
+    border-top: 2px dashed #666;
+	margin: 5px;
+}
+
+hr.top {
+	height: 60px;
+	background-image: url("../assets/hr.png") ;
+    background-position: 50% 150%;
+	background-repeat: no-repeat;
+	background-size: 30px;
+	border:none;
+    border-bottom: 2px dashed #666;
+	margin: 5px;
+}
+
+
 /* [ INPUTS ] */
 
 input  {
@@ -47,6 +78,9 @@ input[type=text] {
 	border-radius: 8px;
 }
 
+
+/* [ BUTTONS] */
+
 .btn {
 	text-align: center;
 	color: #fff;
@@ -55,8 +89,16 @@ input[type=text] {
 	padding: 10px 20px 10px 20px;
 	font-weight: 700;
 	margin: auto;
+	transition: 0.5s;
 }
 
+.btn.flat {
+	transform: scale(0.9,0.9);
+}
+
+.btn.flat:hover {
+	transform: scale(1,1);
+}
 
 .btn.pressable {
 	margin-top: 10px;
@@ -140,11 +182,6 @@ a:hover {
 
 /* [ GALLERY ] */
 
-.gallery .crop {
-	overflow: hidden;
-	border-radius: 20px;
-}
-
 .gallery .pic {
 	margin: 10px;
 }
@@ -163,7 +200,6 @@ a:hover {
 	border-radius: 20px;
 	padding-bottom: 80px;
 	transform: translate(0%, -50%);
-	transition: 0.5s;
 }
 
 .gallery .btn.inner:hover {
@@ -171,26 +207,33 @@ a:hover {
 	font-size: 20px;
 }
 
-/* [ HR ] */
+/* [ PRODUCT CARD ] */
 
-hr.bottom {
-	height: 60px;
-	background-image: url("../assets/hr.png") ;
-    background-position: 50% -50%;
-	background-repeat: no-repeat;
-	background-size: 30px;
-	border:none;
-    border-top: 2px dashed #666;
-	margin: 5px;
+.card {
+	margin: 10px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 23%;
+	border: 1px dashed;
+	padding: 5px;
+	background-color: white;
 }
 
-hr.top {
-	height: 60px;
-	background-image: url("../assets/hr.png") ;
-    background-position: 50% 150%;
-	background-repeat: no-repeat;
-	background-size: 30px;
-	border:none;
-    border-bottom: 2px dashed #666;
-	margin: 5px;
+.card .img {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.card img {
+
+	transform: translate(-35%,-50%) scale(0.6,0.6);
+}
+
+.card .details {
+	height: 100px;
+	margin-bottom: 10px;
+}
+.card .btn {
+    bottom: 30px;
 }
