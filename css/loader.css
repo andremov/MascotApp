@@ -1,0 +1,59 @@
+.loader {
+	z-index: 100;
+  	position: fixed;
+    width: 100%;
+    height: 100%;
+  	background: #ecf0f1;
+}
+
+.load_icon {
+	position: absolute;
+	transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+	/*change these sizes to fit into your project*/
+	width: 100px;
+	height: 100px;
+}
+
+.load_icon hr {
+  border: 0;
+  margin: 0;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  border-radius: 50%;
+  animation: spin 2s ease infinite;
+}
+
+.load_icon :first-child {
+  background: #ff7900;
+  animation-delay: -1.5s;
+}
+.load_icon :nth-child(2) {
+  background: #ff9c42;
+  animation-delay: -1s;
+}
+.load_icon :nth-child(3) {
+  background: #ffbb7d;
+  animation-delay: -0.5s;
+}
+.load_icon :last-child {
+  background: #ffd8b5;
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(160%);
+  }
+  50% {
+    transform: translate(160%, 160%);
+  }
+  75% {
+    transform: translate(0, 160%);
+  }
+}

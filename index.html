@@ -8,17 +8,25 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/loader.js"></script>
 	<script src="js/init.js"></script>
+	<script src="js/loadproducts.js"></script>
 
 </head>
 
 <body>
+	<div class="loader">
+		<div class="load_icon">
+		  <hr/><hr/><hr/><hr/>
+		</div>
+	  </div>
 
 	<!-- Header -->
 	<div class="am_header">
@@ -61,16 +69,6 @@
 			</a>
 		</div>
 	</div>
-
-	<br><br><br><br>	<br><br><br><br>	<br><br><br><br>
-
-	<div id="js1">
-
-	</div>
-
-
-	<br><br><br><br>	<br><br><br><br>	<br><br><br><br>
-
 
 	<!-- Slide1 -->
 	<!--
@@ -139,37 +137,35 @@
 	</section>
 	-->
 
-
-
-
+	<br><br><br><br>
 
 	<!-- Banner -->
-	<div class="section">
+	<div class="section gallery">
 
 		<div class="third">
 
-			<!-- block1 -->
-			<div style="height=600">
-				<img src="images/banner-02.jpg" alt="IMG-BENNER">
-
-				<div class="block1-wrapbtn w-size2">
-					<!-- Button -->
-					<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-						Dresses
-					</a>
+			<!-- Block1 -->
+			<div class="crop" style="height:250px">
+				<div class="crop pic" style="height:250px">
+					<img src="assets/ph.png" name="p1img">
 				</div>
+
+				<a href="#">
+				<div class="btn inner"name="cat1name">
+				</div>
+				</a>
 			</div>
 
-			<!-- block2 -->
-			<div class="h200">
-				<img src="images/banner-05.jpg" alt="IMG-BENNER">
-
-				<div class="block1-wrapbtn w-size2">
-					<!-- Button -->
-					<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-						Sunglasses
-					</a>
+			<!-- Block2 -->
+			<div class="crop" style="height:350px">
+				<div class="crop pic" style="height:350px">
+					<img src="assets/ph.png" name="p2img">
 				</div>
+
+				<a href="#">
+				<div class="btn inner"name="cat4name">
+				</div>
+				</a>
 			</div>
 
 		</div>
@@ -177,27 +173,27 @@
 		<div class="third">
 
 			<!-- block1 -->
-			<div class="h200">
-				<img src="images/banner-03.jpg" alt="IMG-BENNER">
-
-				<div class="block1-wrapbtn w-size2">
-					<!-- Button -->
-					<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-						Watches
-					</a>
+			<div class="crop" style="height:350px">
+				<div class="crop pic" style="height:350px">
+					<img src="assets/ph.png" name="p3img">
 				</div>
+
+				<a href="#">
+				<div class="btn inner"name="cat0name">
+				</div>
+				</a>
 			</div>
 
 			<!-- block2 -->
-			<div class="h100">
-				<img src="images/banner-07.jpg" alt="IMG-BENNER">
-
-				<div class="block1-wrapbtn w-size2">
-					<!-- Button -->
-					<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-						Footerwear
-					</a>
+			<div class="crop" style="height:250px">
+				<div class="crop pic" style="height:250px">
+					<img src="assets/ph.png" name="p4img">
 				</div>
+
+				<a href="#">
+				<div class="btn inner"name="cat1name">
+				</div>
+				</a>
 			</div>
 
 		</div>
@@ -205,20 +201,22 @@
 		<div class="third">
 
 			<!-- block1 -->
-			<div class="h100">
-				<img src="images/banner-04.jpg" alt="IMG-BENNER">
-
-				<div class="block1-wrapbtn w-size2">
-					<!-- Button -->
-					<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-						Bags
-					</a>
+			<div class="crop" style="height:250px">
+				<div class="crop pic" style="height:250px">
+					<img src="assets/ph.png" name="p5img">
 				</div>
+
+				<a href="#">
+				<div class="btn inner"name="cat2name">
+				</div>
+				</a>
 			</div>
 
 			<!-- block2 -->
-			<div class="h200">
-				<img src="images/icons/bg-01.jpg" alt="IMG">
+			<div class="crop" style="height:350px">
+				<div class="crop pic" style="height:350px">
+					<img src="assets/ph.png" name="p6img">
+				</div>
 
 				<div class="block2-content sizefull ab-t-l flex-col-c-m">
 					<h4 class="m-text4 t-center w-size3 p-b-8">
@@ -238,17 +236,18 @@
 				</div>
 			</div>
 
+
 		</div>
+
 	</div>
 
-	<br><br><br><br>	<br><br><br><br>	<br><br><br><br>	<br><br><br><br>	<br><br><br><br>	<br><br><br><br>
+	<hr class="top" /><hr class="bottom" />
+
 	<!-- New Product -->
 
-	<div class="sec-title p-b-60">
-		<h3 class="m-text5 t-center">
-			Featured Products
-		</h3>
-	</div>
+	<h3 style="text-align:center">
+		Featured Products
+	</h3>
 
 	<div class="section">
 		<!-- Block2 -->
@@ -378,163 +377,33 @@
 				</span>
 			</div>
 		</div>
-
-		<!-- Block2 -->
-		<div class="fourth">
-			<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-				<img src="images/item-02.jpg" alt="IMG-PRODUCT">
-
-				<div class="block2-overlay trans-0-4">
-					<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-						<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-						<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-					</a>
-
-					<div class="block2-btn-addcart w-size1 trans-0-4">
-						<!-- Button -->
-						<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-							Add to Cart
-						</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="block2-txt p-t-20">
-				<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-					Herschel supply co 25l
-				</a>
-
-				<span class="block2-price m-text6 p-r-5">
-					$75.00
-				</span>
-			</div>
-		</div>
-
-		<!-- Block2 -->
-		<div class="fourth">
-			<div class="block2-img wrap-pic-w of-hidden pos-relative">
-				<img src="images/item-03.jpg" alt="IMG-PRODUCT">
-
-				<div class="block2-overlay trans-0-4">
-					<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-						<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-						<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-					</a>
-
-					<div class="block2-btn-addcart w-size1 trans-0-4">
-						<!-- Button -->
-						<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-							Add to Cart
-						</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="block2-txt p-t-20">
-				<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-					Denim jacket blue
-				</a>
-
-				<span class="block2-price m-text6 p-r-5">
-					$92.50
-				</span>
-			</div>
-		</div>
-
-		<!-- Block2 -->
-		<div class="fourth">
-			<div class="block2-img wrap-pic-w of-hidden pos-relative">
-				<img src="images/item-05.jpg" alt="IMG-PRODUCT">
-
-				<div class="block2-overlay trans-0-4">
-					<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-						<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-						<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-					</a>
-
-					<div class="block2-btn-addcart w-size1 trans-0-4">
-						<!-- Button -->
-						<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-							Add to Cart
-						</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="block2-txt p-t-20">
-				<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-					Coach slim easton black
-				</a>
-
-				<span class="block2-price m-text6 p-r-5">
-					$165.90
-				</span>
-			</div>
-		</div>
-
-		<!-- Block2 -->
-		<div class="fourth">
-			<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
-				<img src="images/item-07.jpg" alt="IMG-PRODUCT">
-
-				<div class="block2-overlay trans-0-4">
-					<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-						<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-						<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-					</a>
-
-					<div class="block2-btn-addcart w-size1 trans-0-4">
-						<!-- Button -->
-						<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-							Add to Cart
-						</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="block2-txt p-t-20">
-				<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-					Frayed denim shorts
-				</a>
-
-				<span class="block2-oldprice m-text7 p-r-5">
-					$29.50
-				</span>
-
-				<span class="block2-newprice m-text8 p-r-5">
-					$15.90
-				</span>
-			</div>
-
-		</div>
 	</div>
 
-		<br><br><br><br>	<br><br><br><br>	<br><br><br><br>	<br><br><br><br>	<br><br><br><br>	<br><br><br><br>
+	<hr class="top" /><hr class="bottom" />
+
 	<!-- Banner2 -->
-	<section class="banner2 p-t-55 p-b-55">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
-					<div class="hov-img-zoom pos-relative">
-						<img src="images/banner-08.jpg" alt="IMG-BANNER">
+	<div class="section">
+		<div class="half" style="overflow:hidden">
+			<div class="hov-img-zoom pos-relative">
+				<img src="images/banner-08.jpg" alt="IMG-BANNER">
 
-						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
-							<span class="m-text9 p-t-45 fs-20-sm">
-								The Beauty
-							</span>
+				<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
+					<span class="m-text9 p-t-45 fs-20-sm">
+						The Beauty
+					</span>
 
-							<h3 class="l-text1 fs-35-sm">
-								Lookbook
-							</h3>
+					<h3 class="l-text1 fs-35-sm">
+						Lookbook
+					</h3>
 
-							<a href="#" class="s-text4 hov2 p-t-20 ">
-								View Collection
-							</a>
-						</div>
-					</div>
+					<a href="#" class="s-text4 hov2 p-t-20 ">
+						View Collection
+					</a>
 				</div>
+			</div>
+		</div>
 
-				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
+		<div class="half" style="overflow:hidden">
 					<div class="bgwhite hov-img-zoom pos-relative p-b-20per-ssm">
 						<img src="images/shop-item-09.jpg" alt="IMG-BANNER">
 
@@ -597,13 +466,14 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
+	</div>
 
-		<br><br><br><br>	<br><br><br><br>	<br><br><br><br>	<br><br><br><br>	<br><br><br><br>	<br><br><br><br>
+	<hr class="top" /><hr class="bottom" />
+
+
 	<!-- Shipping -->
-	<div class="section white_bg h150">
+	<div class="section white_bg" style="height:150px">
+
 		<div class="third">
 			<h4 class="allcaps">
 				Free Delivery Worldwide
@@ -643,9 +513,11 @@
 				Shop open from Monday to Sunday
 			</span>
 		</div>
+
 	</div>
 
 	<br>
+
 
 	<!-- Footer -->
 	<div class="am_footer">
@@ -779,20 +651,17 @@
 
 			<br>
 
-			<form>
 				<div>
 					<input type="text" name="email" placeholder="email@example.com">
 					<span></span>
 				</div>
 
 				<div>
-					<!-- Button -->
-					<button>
+					<div class="btn pressable">
 						Subscribe
-					</button>
+					</div>
 				</div>
 
-			</form>
 		</div>
 
 		<div class="bottom_block">

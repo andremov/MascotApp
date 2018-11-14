@@ -7,7 +7,7 @@
 	width: 100%;
 
 	position: fixed;
-	z-index: 1100;
+	z-index: 10;
 
 	box-shadow: 0 1px 8px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0 1px 8px 0px rgba(0,0,0,0.75);
@@ -27,6 +27,7 @@
 }
 
 .am_header .icon_block {
+	margin-top: 1%;
 	float: right;
 }
 
@@ -39,7 +40,7 @@
 }
 
 .am_header .icon {
-	width:50px;
+	width:40px;
 	margin-left: 0px;
 	margin-right: 0px;
 }
