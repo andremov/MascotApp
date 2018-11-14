@@ -26,12 +26,7 @@
   font-family: Montserrat-Black;
   src: url('../fonts/montserrat/Montserrat-Black.ttf');
 }
-/*
-@font-face {
-  font-family: Linearicons;
-  src: url('../fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.ttf');
-}
-*/
+
 @font-face {
   font-family: Poppins-Bold;
   src: url('../fonts/poppins/Poppins-Bold.ttf');

@@ -11,5 +11,92 @@ body {
 	background-size: 80px 80px;
 	height: 100%;
 	font-family: Montserrat-Regular, sans-serif;
-  font-weight: 400;
+	font-weight: 400;
+}
+
+
+/* [ GENERAL ] */
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+.allcaps {
+	text-transform: uppercase;
+}
+
+/* [ INPUTS ] */
+
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+input {
+	outline: none;
+	border: none !important;
+}
+
+
+/* [ LINKS ] */
+
+a {
+	color: #ff7b00;
+	text-decoration: none;
+	outline: none !important;
+	transition: 0.3s;
+}
+
+a:hover {
+	color: #e65540;
+	font-weight: 900;
+}
+
+/* [ SECTIONS ] */
+
+.section {
+	width: 100%;
+	padding-top: 30px;
+}
+
+.white_bg {
+	background-color: white;
+}
+
+.section .h150 {
+	height: 150px;
+}
+
+.section .h100 {
+	height: 100px;
+}
+
+.section .h200 {
+	height: 200px;
+}
+
+.section .vertical_line {
+	display: inline-block;
+	height: 50%;
+	width: 1px;
+	background-color: #aaa;
+	margin:auto;
+}
+
+.section .third {
+	margin: 10px;
+	display: inline-block;
+	width: 31%;
+	vertical-align: top;
+	text-align: center;
+}
+
+.section .third * {
+	width: 100%;
 }

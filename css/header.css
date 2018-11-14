@@ -21,7 +21,9 @@
 
 .am_header * {
 	display: inline-block;
+	vertical-align: middle;
 	margin-right: 10px;
+	font-size: 20px;
 }
 
 .am_header .icon_block {
@@ -34,10 +36,6 @@
 	width: 1px;
 	background-color: #aaa;
 	margin-top: 8px;
-}
-
-.am_header .menu {
-
 }
 
 .am_header .icon {
