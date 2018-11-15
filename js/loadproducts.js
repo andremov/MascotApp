@@ -32,14 +32,14 @@
 		]
 
 		var productCards = [
-			'<div class="card"><div class="img" style="height: 200px"><img src="assets/ph.png" name="p0img"></div><div class="details"><a href="product-detail.html" class="" name="p0name"></a><br><span name="p0price"></span></div><div class="btn flat">Add to Cart</div></div>',
-			'<div class="card"><div class="img" style="height: 200px"><img src="assets/ph.png" name="p1img"></div><div class="details"><a href="product-detail.html" class="" name="p1name"></a><br><span name="p1price"></span></div><div class="btn flat">Add to Cart</div></div>',
-			'<div class="card"><div class="img" style="height: 200px"><img src="assets/ph.png" name="p2img"></div><div class="details"><a href="product-detail.html" class="" name="p2name"></a><br><span name="p2price"></span></div><div class="btn flat">Add to Cart</div></div>',
-			'<div class="card"><div class="img" style="height: 200px"><img src="assets/ph.png" name="p3img"></div><div class="details"><a href="product-detail.html" class="" name="p3name"></a><br><span name="p3price"></span></div><div class="btn flat">Add to Cart</div></div>',
-			'<div class="card"><div class="img" style="height: 200px"><img src="assets/ph.png" name="p4img"></div><div class="details"><a href="product-detail.html" class="" name="p4name"></a><br><span name="p4price"></span></div><div class="btn flat">Add to Cart</div></div>',
-			'<div class="card"><div class="img" style="height: 200px"><img src="assets/ph.png" name="p5img"></div><div class="details"><a href="product-detail.html" class="" name="p5name"></a><br><span name="p5price"></span></div><div class="btn flat">Add to Cart</div></div>',
-			'<div class="card"><div class="img" style="height: 200px"><img src="assets/ph.png" name="p6img"></div><div class="details"><a href="product-detail.html" class="" name="p6name"></a><br><span name="p6price"></span></div><div class="btn flat">Add to Cart</div></div>',
-			'<div class="card"><div class="img" style="height: 200px"><img src="assets/ph.png" name="p7img"></div><div class="details"><a href="product-detail.html" class="" name="p7name"></a><br><span name="p7price"></span></div><div class="btn flat">Add to Cart</div></div>',
+			'<div class="card"><div class="img" style="height: 200px"><img src="assets/ph.png" name="p0img"></div><div class="details"><a href="product-detail.html" class="" style="height:50px" name="p0name"></a><br><span name="p0price"></span></div><div class="btn flat">Add to Cart</div></div>',
+			'<div class="card"><div class="img" style="height: 200px"><img src="assets/ph.png" name="p1img"></div><div class="details"><a href="product-detail.html" class="" style="height:50px" name="p1name"></a><br><span name="p1price"></span></div><div class="btn flat">Add to Cart</div></div>',
+			'<div class="card"><div class="img" style="height: 200px"><img src="assets/ph.png" name="p2img"></div><div class="details"><a href="product-detail.html" class="" style="height:50px" name="p2name"></a><br><span name="p2price"></span></div><div class="btn flat">Add to Cart</div></div>',
+			'<div class="card"><div class="img" style="height: 200px"><img src="assets/ph.png" name="p3img"></div><div class="details"><a href="product-detail.html" class="" style="height:50px" name="p3name"></a><br><span name="p3price"></span></div><div class="btn flat">Add to Cart</div></div>',
+			'<div class="card"><div class="img" style="height: 200px"><img src="assets/ph.png" name="p4img"></div><div class="details"><a href="product-detail.html" class="" style="height:50px" name="p4name"></a><br><span name="p4price"></span></div><div class="btn flat">Add to Cart</div></div>',
+			'<div class="card"><div class="img" style="height: 200px"><img src="assets/ph.png" name="p5img"></div><div class="details"><a href="product-detail.html" class="" style="height:50px" name="p5name"></a><br><span name="p5price"></span></div><div class="btn flat">Add to Cart</div></div>',
+			'<div class="card"><div class="img" style="height: 200px"><img src="assets/ph.png" name="p6img"></div><div class="details"><a href="product-detail.html" class="" style="height:50px" name="p6name"></a><br><span name="p6price"></span></div><div class="btn flat">Add to Cart</div></div>',
+			'<div class="card"><div class="img" style="height: 200px"><img src="assets/ph.png" name="p7img"></div><div class="details"><a href="product-detail.html" class="" style="height:50px" name="p7name"></a><br><span name="p7price"></span></div><div class="btn flat">Add to Cart</div></div>',
 		]
 
 		$( "[name='card0']" ).replaceWith(productCards[0]);
