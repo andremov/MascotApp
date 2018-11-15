@@ -22,53 +22,15 @@
 </head>
 
 <body>
+	<!-- Loader -->
 	<div class="loader">
 		<div class="load_icon">
-		  <hr/><hr/><hr/><hr/>
-		</div>
-	  </div>
-
-	<!-- Header -->
-	<div class="am_header">
-
-		<!-- Logo -->
-		<a href="index.html"><img class="logo" src="assets/ma_logo_bkg.png"></a>
-
-		<!-- Header Menu -->
-		<ul class="menu allcaps">
-			<li>
-				<a href="products.html">Shop</a>
-			</li>
-
-			<li>
-				<a href="products.html">Sales</a>
-			</li>
-
-			<li>
-				<a href="about.html">About</a>
-			</li>
-
-			<li>
-				<a href="contact.html">Contact</a>
-			</li>
-		</ul>
-
-		<!-- Header Icons -->
-		<div class="icon_block">
-			<a href="#">
-				<img src="assets/not_user.png" class="icon">
-			</a>
-
-			<span class="vertical_line"></span>
-
-			<a href="#">
-				<img src="assets/ma_cart_orange_border.png" class="icon">
-				<!--
-				<span class="header-icons-noti">0</span>
-				-->
-			</a>
+			<hr/><hr/><hr/><hr/>
 		</div>
 	</div>
+
+	<!-- Header -->
+	<div name="jsHeader"></div>
 
 	<!-- Slide1 -->
 	<!--
@@ -147,7 +109,7 @@
 			<!-- Block1 -->
 			<div class="crop soft" style="height:250px">
 				<div class="crop pic" style="height:250px">
-					<img src="assets/ph.png" name="p1img">
+					<img src="assets/ph.png" name="p0img">
 				</div>
 
 				<a href="#">
@@ -159,7 +121,7 @@
 			<!-- Block2 -->
 			<div class="crop soft" style="height:350px">
 				<div class="crop pic" style="height:350px">
-					<img src="assets/ph.png" name="p2img">
+					<img src="assets/ph.png" name="p1img">
 				</div>
 
 				<a href="#">
@@ -175,7 +137,7 @@
 			<!-- block1 -->
 			<div class="crop soft" style="height:350px">
 				<div class="crop pic" style="height:350px">
-					<img src="assets/ph.png" name="p3img">
+					<img src="assets/ph.png" name="p2img">
 				</div>
 
 				<a href="#">
@@ -187,7 +149,7 @@
 			<!-- block2 -->
 			<div class="crop soft" style="height:250px">
 				<div class="crop pic" style="height:250px">
-					<img src="assets/ph.png" name="p4img">
+					<img src="assets/ph.png" name="p3img">
 				</div>
 
 				<a href="#">
@@ -203,7 +165,7 @@
 			<!-- block1 -->
 			<div class="crop soft" style="height:250px">
 				<div class="crop pic" style="height:250px">
-					<img src="assets/ph.png" name="p5img">
+					<img src="assets/ph.png" name="p4img">
 				</div>
 
 				<a href="#">
@@ -215,7 +177,7 @@
 			<!-- block2 -->
 			<div class="crop soft" style="height:350px">
 				<div class="crop pic" style="height:350px">
-					<img src="assets/ph.png" name="p6img">
+					<img src="assets/ph.png" name="p5img">
 				</div>
 
 				<div class="block2-content sizefull ab-t-l flex-col-c-m">
@@ -250,78 +212,10 @@
 	</h3>
 
 	<div class="section">
-		<!-- Block2 -->
-		<div class="card">
-			<div class="img" style="height: 200px">
-				<img src="assets/ph.png" name="p1img">
-			</div>
-
-			<div class="details">
-				<a href="product-detail.html" class="" name="p0name"></a>
-				<br>
-				<span class="">
-					$75.00
-				</span>
-			</div>
-			<div class="btn flat">
-				Add to Cart
-			</div>
-
-		</div>
-
-		<!-- Block2 -->
-		<div class="card">
-			<div class="img" style="height: 200px">
-				<img src="assets/ph.png" name="p2img">
-			</div>
-
-			<div class="details">
-				<a href="product-detail.html" class="" name="p1name"></a>
-				<br>
-				<span class="">
-					$90.00
-				</span>
-			</div>
-			<div class="btn flat">
-				Add to Cart
-			</div>
-		</div>
-
-		<!-- Block2 -->
-		<div class="card">
-			<div class="img" style="height: 200px">
-				<img src="assets/ph.png" name="p3img">
-			</div>
-
-			<div class="details">
-				<a href="product-detail.html" class="" name="p2name"></a>
-				<br>
-				<span class="">
-					$150.00
-				</span>
-			</div>
-			<div class="btn flat">
-				Add to Cart
-			</div>
-		</div>
-
-		<!-- Block2 -->
-		<div class="card">
-			<div class="img" style="height: 200px">
-				<img src="assets/ph.png" name="p4img">
-			</div>
-
-			<div class="details">
-				<a href="product-detail.html" class="" name="p3name"></a>
-				<br>
-				<span class="">
-					$90.00
-				</span>
-			</div>
-			<div class="btn flat">
-				Add to Cart
-			</div>
-		</div>
+		<div name="card0"></div>
+		<div name="card1"></div>
+		<div name="card2"></div>
+		<div name="card3"></div>
 	</div>
 
 	<hr class="top" /><hr class="bottom" />
@@ -464,166 +358,9 @@
 
 	<br>
 
-
+	
 	<!-- Footer -->
-	<div class="am_footer">
-
-		<div class="block">
-			<h5 class="allcaps">
-				Get In Touch
-			</h5>
-			<br>
-			<div>
-				<p>
-					Any questions? Let us know in store at
-					5505 Boul St-Laurent #2000, Montréal, QC H2T 1S6, Canada or call us on (+1) 808 804 8120
-				</p>
-				<br>
-
-				<a href="#"><img class="icon_small" src="assets/icons/twitter.png"></a>
-				<a href="#"><img class="icon_small" src="assets/icons/youtube.png"></a>
-				<a href="#"><img class="icon_small" src="assets/icons/instagram.png"></a>
-				<a href="#"><img class="icon_small" src="assets/icons/snapchat.png"></a>
-				<a href="#"><img class="icon_small" src="assets/icons/email.png"></a>
-			</div>
-		</div>
-
-		<div class="block">
-			<h5 class="allcaps">
-				Categories
-			</h5>
-
-			<br>
-
-			<ul>
-				<li>
-					<a href="#">
-						Men
-					</a>
-				</li>
-
-				<li>
-					<a href="#">
-						Women
-					</a>
-				</li>
-
-				<li>
-					<a href="#">
-						Dresses
-					</a>
-				</li>
-
-				<li>
-					<a href="#">
-						Sunglasses
-					</a>
-				</li>
-			</ul>
-		</div>
-
-		<div class="block">
-			<h5 class="allcaps">
-				Links
-			</h5>
-
-			<br>
-
-			<ul>
-				<li>
-					<a href="#">
-						Search
-					</a>
-				</li>
-
-				<li>
-					<a href="#">
-						About Us
-					</a>
-				</li>
-
-				<li>
-					<a href="#">
-						Contact Us
-					</a>
-				</li>
-
-				<li>
-					<a href="#">
-						Returns
-					</a>
-				</li>
-			</ul>
-		</div>
-
-		<div class="block">
-			<h5 class="allcaps">
-				Help
-			</h5>
-
-			<br>
-
-			<ul>
-				<li>
-					<a href="#">
-						Track Order
-					</a>
-				</li>
-
-				<li>
-					<a href="#">
-						Returns
-					</a>
-				</li>
-
-				<li>
-					<a href="#">
-						Shipping
-					</a>
-				</li>
-
-				<li>
-					<a href="#">
-						FAQs
-					</a>
-				</li>
-			</ul>
-		</div>
-
-		<div class="block">
-			<h5 class="allcaps">
-				Newsletter
-			</h5>
-
-			<br>
-
-				<div>
-					<input type="text" name="email" placeholder="email@example.com">
-					<span></span>
-				</div>
-
-				<div>
-					<div class="btn pressable">
-						Subscribe
-					</div>
-				</div>
-
-		</div>
-
-		<div class="bottom_block">
-
-			<img class="icon_small" src="assets/icons/paypal.png">
-			<img class="icon_small" src="assets/icons/visa.png">
-			<img class="icon_small" src="assets/icons/mastercard.png">
-			<img class="icon_small" src="assets/icons/express.png">
-			<img class="icon_small" src="assets/icons/discover.png">
-
-			<br>
-
-			Copyright 'MascotApp' © 2018 All rights reserved.
-		</div>
-
-	</div>
+	<div name="jsFooter"></div>
 
 </body>
 </html>

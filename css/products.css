@@ -1,0 +1,22 @@
+
+.filters {
+	border: 1px dashed;
+	border-radius: 10px;
+	display:block;
+	width:50%;
+	text-align: left;
+	padding:10px;
+
+	margin: 10px;
+	display: inline-block;
+	vertical-align: top;
+	width: 23%;
+}
+
+.filters h4 {
+	text-align: center;
+}
+
+.filters * {
+	margin-bottom: 10px;
+}

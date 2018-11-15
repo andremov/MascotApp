@@ -1,808 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<link rel="icon" type="image/png" href="assets/ma_icon.png"/>
-	<title>Products - MascotApp</title>
+	<title>Shop - MascotApp</title>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/products.css">
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/loader.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/loadproducts.js"></script>
 
 </head>
+
 <body>
-
-	<!-- Header -->
-	<div class="am_header">
-
-		<!-- Logo -->
-		<a href="index.html"><img class="logo" src="assets/ma_logo_bkg.png"></a>
-
-		<!-- Header Menu -->
-		<ul class="menu allcaps">
-			<li>
-				<a href="products.html">Shop</a>
-			</li>
-
-			<li>
-				<a href="products.html">Sales</a>
-			</li>
-
-			<li>
-				<a href="about.html">About</a>
-			</li>
-
-			<li>
-				<a href="contact.html">Contact</a>
-			</li>
-		</ul>
-
-		<!-- Header Icons -->
-		<div class="icon_block">
-			<a href="#">
-				<img src="assets/not_user.png" class="icon">
-			</a>
-
-			<span class="vertical_line"></span>
-
-			<a href="#">
-				<img src="assets/ma_cart_orange_border.png" class="icon">
-				<!--
-				<span class="header-icons-noti">0</span>
-				-->
-			</a>
+	<!-- Loader -->
+	<div class="loader">
+		<div class="load_icon">
+			<hr/><hr/><hr/><hr/>
 		</div>
 	</div>
-	
-	<!-- Title Page -->
-	<section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url(images/heading-pages-02.jpg);">
-		<h2 class="l-text2 t-center">
-			Women
-		</h2>
-		<p class="m-text13 t-center">
-			New Arrivals Women Collection 2018
-		</p>
-	</section>
 
+	<!-- Header -->
+	<div name="jsHeader"></div>
 
 	<!-- Content page -->
-	<section class="bgwhite p-t-55 p-b-65">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-50">
-					<div class="leftbar p-r-20 p-r-0-sm">
-						<!--  -->
-						<h4 class="m-text14 p-b-7">
-							Categories
-						</h4>
+	<div class="section">
+		<div class="white_bg filters">
 
-						<ul class="p-b-54">
-							<li class="p-t-4">
-								<a href="#" class="s-text13 active1">
-									All
-								</a>
-							</li>
+			<!-- Categories -->
+			<div>
+				<h4>Categories</h4>
 
-							<li class="p-t-4">
-								<a href="#" class="s-text13">
-									Women
-								</a>
-							</li>
+				<ul>
+					<li><a href="#">All</a></li>
+					<li><a href="#" name="cat0name"></a></li>
+					<li><a href="#" name="cat1name"></a></li>
+					<li><a href="#" name="cat2name"></a></li>
+					<li><a href="#" name="cat3name"></a></li>
+					<li><a href="#" name="cat4name"></a></li>
+				</ul>
+			</div>
 
-							<li class="p-t-4">
-								<a href="#" class="s-text13">
-									Men
-								</a>
-							</li>
+			<!-- Filters -->
+			<!--
+			<div>
+				<h4 class="m-text14 p-b-32">
+					Filters
+				</h4>
 
-							<li class="p-t-4">
-								<a href="#" class="s-text13">
-									Kids
-								</a>
-							</li>
+				<div class="filter-price p-t-22 p-b-50 bo3">
+					<div class="m-text15 p-b-17">
+						Price
+					</div>
 
-							<li class="p-t-4">
-								<a href="#" class="s-text13">
-									Accesories
-								</a>
-							</li>
-						</ul>
+					<div class="wra-filter-bar">
+						<div id="filter-bar"></div>
+					</div>
 
-						<!--  -->
-						<h4 class="m-text14 p-b-32">
-							Filters
-						</h4>
-
-						<div class="filter-price p-t-22 p-b-50 bo3">
-							<div class="m-text15 p-b-17">
-								Price
-							</div>
-
-							<div class="wra-filter-bar">
-								<div id="filter-bar"></div>
-							</div>
-
-							<div class="flex-sb-m flex-w p-t-16">
-								<div class="w-size11">
-									<!-- Button -->
-									<button class="flex-c-m size4 bg7 bo-rad-15 hov1 s-text14 trans-0-4">
-										Filter
-									</button>
-								</div>
-
-								<div class="s-text3 p-t-10 p-b-10">
-									Range: $<span id="value-lower">610</span> - $<span id="value-upper">980</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="filter-color p-t-22 p-b-50 bo3">
-							<div class="m-text15 p-b-12">
-								Color
-							</div>
-
-							<ul class="flex-w">
-								<li class="m-r-10">
-									<input class="checkbox-color-filter" id="color-filter1" type="checkbox" name="color-filter1">
-									<label class="color-filter color-filter1" for="color-filter1"></label>
-								</li>
-
-								<li class="m-r-10">
-									<input class="checkbox-color-filter" id="color-filter2" type="checkbox" name="color-filter2">
-									<label class="color-filter color-filter2" for="color-filter2"></label>
-								</li>
-
-								<li class="m-r-10">
-									<input class="checkbox-color-filter" id="color-filter3" type="checkbox" name="color-filter3">
-									<label class="color-filter color-filter3" for="color-filter3"></label>
-								</li>
-
-								<li class="m-r-10">
-									<input class="checkbox-color-filter" id="color-filter4" type="checkbox" name="color-filter4">
-									<label class="color-filter color-filter4" for="color-filter4"></label>
-								</li>
-
-								<li class="m-r-10">
-									<input class="checkbox-color-filter" id="color-filter5" type="checkbox" name="color-filter5">
-									<label class="color-filter color-filter5" for="color-filter5"></label>
-								</li>
-
-								<li class="m-r-10">
-									<input class="checkbox-color-filter" id="color-filter6" type="checkbox" name="color-filter6">
-									<label class="color-filter color-filter6" for="color-filter6"></label>
-								</li>
-
-								<li class="m-r-10">
-									<input class="checkbox-color-filter" id="color-filter7" type="checkbox" name="color-filter7">
-									<label class="color-filter color-filter7" for="color-filter7"></label>
-								</li>
-							</ul>
-						</div>
-
-						<div class="search-product pos-relative bo4 of-hidden">
-							<input class="s-text7 size6 p-l-23 p-r-50" type="text" name="search-product" placeholder="Search Products...">
-
-							<button class="flex-c-m size5 ab-r-m color2 color0-hov trans-0-4">
-								<i class="fs-12 fa fa-search" aria-hidden="true"></i>
+					<div class="flex-sb-m flex-w p-t-16">
+						<div class="w-size11">
+							<button class="flex-c-m size4 bg7 bo-rad-15 hov1 s-text14 trans-0-4">
+								Filter
 							</button>
 						</div>
-					</div>
-				</div>
 
-				<div class="col-sm-6 col-md-8 col-lg-9 p-b-50">
-					<!--  -->
-					<div class="flex-sb-m flex-w p-b-35">
-						<div class="flex-w">
-							<div class="rs2-select2 bo4 of-hidden w-size12 m-t-5 m-b-5 m-r-10">
-								<select class="selection-2" name="sorting">
-									<option>Default Sorting</option>
-									<option>Popularity</option>
-									<option>Price: low to high</option>
-									<option>Price: high to low</option>
-								</select>
-							</div>
-
-							<div class="rs2-select2 bo4 of-hidden w-size12 m-t-5 m-b-5 m-r-10">
-								<select class="selection-2" name="sorting">
-									<option>Price</option>
-									<option>$0.00 - $50.00</option>
-									<option>$50.00 - $100.00</option>
-									<option>$100.00 - $150.00</option>
-									<option>$150.00 - $200.00</option>
-									<option>$200.00+</option>
-
-								</select>
-							</div>
+						<div class="s-text3 p-t-10 p-b-10">
+							Range: $<span id="value-lower">610</span> - $<span id="value-upper">980</span>
 						</div>
-
-						<span class="s-text8 p-t-5 p-b-5">
-							Showing 1–12 of 16 results
-						</span>
-					</div>
-
-					<!-- Product -->
-					<div class="row">
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-									<img src="images/item-02.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Herschel supply co 25l
-									</a>
-
-									<span class="block2-price m-text6 p-r-5">
-										$75.00
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative">
-									<img src="images/item-03.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Denim jacket blue
-									</a>
-
-									<span class="block2-price m-text6 p-r-5">
-										$92.50
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative">
-									<img src="images/item-05.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Coach slim easton black
-									</a>
-
-									<span class="block2-price m-text6 p-r-5">
-										$165.90
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
-									<img src="images/item-07.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Frayed denim shorts
-									</a>
-
-									<span class="block2-oldprice m-text7 p-r-5">
-										$29.50
-									</span>
-
-									<span class="block2-newprice m-text8 p-r-5">
-										$15.90
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-									<img src="images/item-01.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Herschel supply co 25l
-									</a>
-
-									<span class="block2-price m-text6 p-r-5">
-										$75.00
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative">
-									<img src="images/item-14.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Denim jacket blue
-									</a>
-
-									<span class="block2-price m-text6 p-r-5">
-										$92.50
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-									<img src="images/item-06.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Herschel supply co 25l
-									</a>
-
-									<span class="block2-price m-text6 p-r-5">
-										$75.00
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative">
-									<img src="images/item-08.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Denim jacket blue
-									</a>
-
-									<span class="block2-price m-text6 p-r-5">
-										$92.50
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative">
-									<img src="images/item-10.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Coach slim easton black
-									</a>
-
-									<span class="block2-price m-text6 p-r-5">
-										$165.90
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
-									<img src="images/item-11.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Frayed denim shorts
-									</a>
-
-									<span class="block2-oldprice m-text7 p-r-5">
-										$29.50
-									</span>
-
-									<span class="block2-newprice m-text8 p-r-5">
-										$15.90
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-									<img src="images/item-12.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Herschel supply co 25l
-									</a>
-
-									<span class="block2-price m-text6 p-r-5">
-										$75.00
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-							<!-- Block2 -->
-							<div class="block2">
-								<div class="block2-img wrap-pic-w of-hidden pos-relative">
-									<img src="images/item-15.jpg" alt="IMG-PRODUCT">
-
-									<div class="block2-overlay trans-0-4">
-										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-											<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-											<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-										</a>
-
-										<div class="block2-btn-addcart w-size1 trans-0-4">
-											<!-- Button -->
-											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-												Add to Cart
-											</button>
-										</div>
-									</div>
-								</div>
-
-								<div class="block2-txt p-t-20">
-									<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-										Denim jacket blue
-									</a>
-
-									<span class="block2-price m-text6 p-r-5">
-										$92.50
-									</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Pagination -->
-					<div class="pagination flex-m flex-w p-t-26">
-						<a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>
-						<a href="#" class="item-pagination flex-c-m trans-0-4">2</a>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+			-->
 
+			<!-- Color -->
+			<!--
+			<div>
+				<div class="filter-color p-t-22 p-b-50 bo3">
+					<div class="m-text15 p-b-12">
+						Color
+					</div>
 
-		<!-- Footer -->
-		<div class="am_footer">
+					<ul class="flex-w">
+						<li class="m-r-10">
+							<input class="checkbox-color-filter" id="color-filter1" type="checkbox" name="color-filter1">
+							<label class="color-filter color-filter1" for="color-filter1"></label>
+						</li>
 
-			<div class="block">
-				<h5 class="allcaps">
-					Get In Touch
-				</h5>
-				<br>
-				<div>
-					<p>
-						Any questions? Let us know in store at
-						5505 Boul St-Laurent #2000, Montréal, QC H2T 1S6, Canada or call us on (+1) 808 804 8120
-					</p>
-					<br>
+						<li class="m-r-10">
+							<input class="checkbox-color-filter" id="color-filter2" type="checkbox" name="color-filter2">
+							<label class="color-filter color-filter2" for="color-filter2"></label>
+						</li>
 
-					<a href="#"><img class="icon_small" src="assets/icons/twitter.png"></a>
-					<a href="#"><img class="icon_small" src="assets/icons/youtube.png"></a>
-					<a href="#"><img class="icon_small" src="assets/icons/instagram.png"></a>
-					<a href="#"><img class="icon_small" src="assets/icons/snapchat.png"></a>
-					<a href="#"><img class="icon_small" src="assets/icons/email.png"></a>
+						<li class="m-r-10">
+							<input class="checkbox-color-filter" id="color-filter3" type="checkbox" name="color-filter3">
+							<label class="color-filter color-filter3" for="color-filter3"></label>
+						</li>
+
+						<li class="m-r-10">
+							<input class="checkbox-color-filter" id="color-filter4" type="checkbox" name="color-filter4">
+							<label class="color-filter color-filter4" for="color-filter4"></label>
+						</li>
+
+						<li class="m-r-10">
+							<input class="checkbox-color-filter" id="color-filter5" type="checkbox" name="color-filter5">
+							<label class="color-filter color-filter5" for="color-filter5"></label>
+						</li>
+
+						<li class="m-r-10">
+							<input class="checkbox-color-filter" id="color-filter6" type="checkbox" name="color-filter6">
+							<label class="color-filter color-filter6" for="color-filter6"></label>
+						</li>
+
+						<li class="m-r-10">
+							<input class="checkbox-color-filter" id="color-filter7" type="checkbox" name="color-filter7">
+							<label class="color-filter color-filter7" for="color-filter7"></label>
+						</li>
+					</ul>
 				</div>
 			</div>
+			-->
+			<br>
+			<!-- Sorts -->
+			<div>
+				<h4>
+					Sorting
+				</h4>
 
-			<div class="block">
-				<h5 class="allcaps">
-					Categories
-				</h5>
-
-				<br>
-
-				<ul>
-					<li>
-						<a href="#">
-							Men
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							Women
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							Dresses
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							Sunglasses
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="block">
-				<h5 class="allcaps">
-					Links
-				</h5>
-
-				<br>
-
-				<ul>
-					<li>
-						<a href="#">
-							Search
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							About Us
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							Contact Us
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							Returns
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="block">
-				<h5 class="allcaps">
-					Help
-				</h5>
-
-				<br>
-
-				<ul>
-					<li>
-						<a href="#">
-							Track Order
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							Returns
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							Shipping
-						</a>
-					</li>
-
-					<li>
-						<a href="#">
-							FAQs
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="block">
-				<h5 class="allcaps">
-					Newsletter
-				</h5>
-
-				<br>
-
-				<form>
-					<div>
-						<input type="text" name="email" placeholder="email@example.com">
-						<span></span>
+				<div class="flex-w">
+					<div class="">
+						<select class="selection-2" name="sorting">
+							<option>Default Sorting</option>
+							<option>Popularity</option>
+							<option>Price: low to high</option>
+							<option>Price: high to low</option>
+						</select>
 					</div>
 
-					<div>
-						<!-- Button -->
-						<button>
-							Subscribe
-						</button>
+					<div class="">
+						<select class="selection-2" name="sorting">
+							<option>Price</option>
+							<option>$0.00 - $50.00</option>
+							<option>$50.00 - $100.00</option>
+							<option>$100.00 - $150.00</option>
+							<option>$150.00 - $200.00</option>
+							<option>$200.00+</option>
+
+						</select>
 					</div>
-
-				</form>
-			</div>
-
-			<div class="bottom_block">
-
-				<img class="icon_small" src="assets/icons/paypal.png">
-				<img class="icon_small" src="assets/icons/visa.png">
-				<img class="icon_small" src="assets/icons/mastercard.png">
-				<img class="icon_small" src="assets/icons/express.png">
-				<img class="icon_small" src="assets/icons/discover.png">
-
-				<br>
-
-				Copyright 'MascotApp' © 2018 All rights reserved.
+				</div>
 			</div>
 
 		</div>
 
-	</body>
-	</html>
+		<!-- Products -->
+		<div class="fourthx3">
+			<div name="card0"></div>
+			<div name="card1"></div>
+			<div name="card2"></div>
+			<div name="card3"></div>
+			<div name="card4"></div>
+			<div name="card5"></div>
+		</div>
+
+	</div>
+
+
+	<!-- Footer -->
+	<div name="jsFooter"></div>
+
+</body>
+</html>

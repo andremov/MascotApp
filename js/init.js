@@ -1,0 +1,13 @@
+(function($){
+  $(function(){
+
+	var header = '<div class="am_header"><a href="index.html"><img class="logo" src="assets/ma_logo_bkg.png"></a><!-- Header Menu --><ul class="menu allcaps"><li><a href="products.html">Shop</a></li><li><a href="products.html">Sales</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul><!-- Header Icons --><div class="icon_block"><a href="#"><img src="assets/not_user.png" class="icon"></a><span class="vertical_line"></span><a href="#"><img src="assets/ma_cart_orange_border.png" class="icon"><!--<span class="header-icons-noti">0</span>--></a></div></div><br><br><br><br><br><br>';
+
+	var footer = '<div class="am_footer"><div class="block"><h5 class="allcaps">Get In Touch</h5><br><div><p>Any questions? Let us know in store at5505 Boul St-Laurent #2000, Montréal, QC H2T 1S6, Canada or call us on (+1) 808 804 8120</p><br><a href="#"><img class="icon_small" src="assets/icons/twitter.png"></a><a href="#"><img class="icon_small" src="assets/icons/youtube.png"></a><a href="#"><img class="icon_small" src="assets/icons/instagram.png"></a><a href="#"><img class="icon_small" src="assets/icons/snapchat.png"></a><a href="#"><img class="icon_small" src="assets/icons/email.png"></a></div></div><div class="block"><h5 class="allcaps">Categories</h5><br>	<ul>	<li><a href="#" name="cat0name"></a></li>	<li><a href="#" name="cat1name"></a></li>	<li><a href="#" name="cat2name"></a></li>	<li><a href="#" name="cat3name"></a></li>	<li><a href="#" name="cat4name"></a></li>	</ul></div><div class="block"><h5 class="allcaps">Links</h5><br><ul><li><a href="#">Search</a></li><li><a href="#">About Us</a></li><li><a href="#">Contact Us</a></li><li><a href="#">Returns</a></li></ul></div><div class="block"><h5 class="allcaps">Help</h5><br><ul><li><a href="#">Track Order</a></li><li><a href="#">Returns</a></li><li><a href="#">Shipping</a></li><li><a href="#">FAQs</a></li></ul></div><div class="block"><h5 class="allcaps">Newsletter</h5><br><div><input type="text" name="email" placeholder="email@example.com"><span></span></div><div><div class="btn pressable">Subscribe</div></div></div><div class="bottom_block"><img class="icon_small" src="assets/icons/paypal.png"><img class="icon_small" src="assets/icons/visa.png"><img class="icon_small" src="assets/icons/mastercard.png"><img class="icon_small" src="assets/icons/express.png"><img class="icon_small" src="assets/icons/discover.png"><br>Copyright \'MascotApp\' © 2018 All rights reserved.</div></div>';
+
+	$( "[name='jsHeader']" ).replaceWith(header);
+
+	$( "[name='jsFooter']" ).replaceWith(footer);
+
+  });
+})(jQuery);
